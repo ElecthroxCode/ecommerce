@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="main.css">
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 14px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <main class="main-container">
+    <header class="header">
+        <div class="header__menu-logo">
+          <img src="./images/icon-menu.svg" alt="menu" class="header__menu">
+          <img src="./images/logo.svg" alt="logo" class="header__logo">
+                 <!--header_navbar-Desktop-->
+      
+                 <div class="header__desktop">
+                  <ul class="header__desktop-ul">
+                    <li><a href="#">Collections</a></li>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                  </ul>
+                </div>
+                <!--fin header_navbar-Desktop-->
+        </div>
+        
+          <div class="header__modal-navbar">
+            <div class="header__modal-white">
+              <img src="./images/icon-close.svg" alt="close" class="header__close-icon">
+              
+                <ul class="header__items-ul">
+                    <li class="header__links"><a href="#">Collections</a></li>
+                    <li class="header__links"><a href="#">Men</a></li>
+                    <li class="header__links"><a href="#">Women</a></li>
+                    <li class="header__links"><a href="#">About</a></li>
+                    <li class="header__links"><a href="#">Contact</a></li>
+                </ul>
+            </div>
+          </div>
+        
+        <div class="header__car-avatar">
+          <div class="header__car--container">
+            <div class="header__car--notifications">0</div>
+            <img src="./images/icon-cart.svg" alt="car" class="header__car-icon">
+          </div>
+            <img src="./images/image-avatar.png" alt="avatar" class="header__avatar">
+        </div>
+    
+    </header>
+    <section class="content">
+      <div class="gallery">
+        <div class="gallery__container">
+          <img src="./images/icon-previous.svg" alt="previus" class="gallery__previus">
+          <img src="./images/icon-next.svg" alt="next" class="gallery__next">
+        </div>
+        <div class="gallery__thumnails">
+          <img src="./images/image-product-1-thumbnail.jpg" alt="thumnails" id="1" class="gallery__thumnail">
+          <img src="./images/image-product-2-thumbnail.jpg" alt="thumnails" id="2" class="gallery__thumnail">
+          <img src="./images/image-product-3-thumbnail.jpg" alt="thumnails" id="3" class="gallery__thumnail">
+          <img src="./images/image-product-4-thumbnail.jpg" alt="thumnails" id="4" class="gallery__thumnail">
+        </div>
+      </div>
+      <div class="details">
+        <h2 class="details__company">Sneaker Company</h2>
+        <h2 class="details__title">Fall Limited Edition Sneakers</h2>
+        <p class="details__description">These low-profile sneakers are your perfect casual wear companion. Featuring a 
+          durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+        <div class="details__price">
+            <p class="details__now">$125.00 <span class="details__discount">50%</span></p>
+            <p class="details__before">$250.00</p>
+        </div>
+        <div class="desktop-input">
+          <div class="input">
+            <img src="./images/icon-minus.svg" alt="minus" class="input__minus">
+            <input type="text" name="" class="input__number">
+            <img src="./images/icon-plus.svg" alt="" class="input__plus">
+          </div>
+          <button class="details__btnAdd"><img src="./images/icon-cart-white.svg" alt="" class="details__car-btnAdd">Add to cart</button>
+        </div>
+      </div>
+    </section>
+    <!--modal details-car-->
+    <div class="modal-cart">
+      <p class="modal-cart__title">
+        Cart
+      </p>
+      <div class="modal-cart__container">
+        <div class="modal-cart__product">
+        
+            <img src="./images/image-product-1-thumbnail.jpg" alt="product" class="modal-cart__img--product">
+            <div class="modal-cart__details">
+              <p class="modal-cart__p2">Fall Limited Edition Sneakers</p>
+              <p class="modal-cart__price">$125.00 x 3 <span>$375.00</span></p>
+            </div>
+            <img src="./images/icon-delete.svg" alt="" class="modal-cart__img-delete">
+        </div>
+        <button class="modal-cart__btnCheckout">Checkout</button>
+      </div>
+    </div>
+    <!--finnal modal details-car-->
+
+    <!--modalgallery desktop-->
+    <div class="modalgallery">
+      <div class="modalgallery__container">
+        <div class="modalgallery__close-container">
+          <img src="./images/icon-close.svg" alt="close" class="modalgallery__close">
+        </div> 
+        <div class="modalgallery__img"> 
+          <img src="./images/icon-previous.svg" alt="previus" class="modalgallery__previus">
+          <img src="./images/icon-next.svg" alt="next" class="modalgallery__next">
+        </div>
+        <div class="modalgallery__thumnails">
+          <img src="./images/image-product-1-thumbnail.jpg" alt="thumnails" id="th1" class="modalgallery__thumnail">
+          <img src="./images/image-product-2-thumbnail.jpg" alt="thumnails" id="th2" class="modalgallery__thumnail">
+          <img src="./images/image-product-3-thumbnail.jpg" alt="thumnails" id="th3" class="modalgallery__thumnail">
+          <img src="./images/image-product-4-thumbnail.jpg" alt="thumnails" id="th4" class="modalgallery__thumnail">
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="attribution">
+        
+        Coded by <a href="#">Emmanuel Silano</a>.
+      </div>
+    </footer>
+  </main>
+
+
+ 
+  <script src="/main.js"></script>
+</body>
+</html>
